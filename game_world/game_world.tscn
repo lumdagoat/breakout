@@ -1,18 +1,100 @@
 [gd_scene format=3 uid="uid://br6hqfxgkdyhy"]
 
 [ext_resource type="PackedScene" uid="uid://h5xtegd3alle" path="res://player/player.tscn" id="1_406pi"]
+[ext_resource type="PackedScene" uid="uid://cnyj7jvq0eroh" path="res://brick/brick.tscn" id="2_w1xl6"]
+[ext_resource type="PackedScene" uid="uid://64wvkg66v44a" path="res://ball/ball.tscn" id="3_abhvm"]
 
 [node name="GameWorld" type="Node" unique_id=28283883]
 
 [node name="Player" parent="." unique_id=172502323 instance=ExtResource("1_406pi")]
-position = Vector2(352, 1256)
+position = Vector2(336, 1248)
 collision_mask = 10
 
 [node name="WorldBoundary" type="StaticBody2D" parent="." unique_id=2104299594]
 disable_mode = 1
 collision_layer = 8
 collision_mask = 7
+metadata/_edit_group_ = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="WorldBoundary" unique_id=377492364]
 build_mode = 1
 polygon = PackedVector2Array(0, -1, 720, 0, 720, 1280, 0, 1280)
+
+[node name="Bricks" parent="." unique_id=1196201401 instance=ExtResource("2_w1xl6")]
+position = Vector2(64, 32)
+metadata/_edit_group_ = true
+
+[node name="Area2D2" parent="Bricks" unique_id=584274654 instance=ExtResource("2_w1xl6")]
+position = Vector2(128, 0)
+
+[node name="Area2D3" parent="Bricks" unique_id=1707297451 instance=ExtResource("2_w1xl6")]
+position = Vector2(256, 0)
+
+[node name="Area2D4" parent="Bricks" unique_id=1928084971 instance=ExtResource("2_w1xl6")]
+position = Vector2(384, 0)
+
+[node name="Area2D5" parent="Bricks" unique_id=1440576357 instance=ExtResource("2_w1xl6")]
+position = Vector2(512, 0)
+
+[node name="Area2D6" parent="Bricks" unique_id=693419810 instance=ExtResource("2_w1xl6")]
+position = Vector2(592, 64)
+
+[node name="Area2D7" parent="Bricks" unique_id=971192232 instance=ExtResource("2_w1xl6")]
+position = Vector2(464, 64)
+
+[node name="Area2D8" parent="Bricks" unique_id=545090064 instance=ExtResource("2_w1xl6")]
+position = Vector2(336, 64)
+
+[node name="Area2D9" parent="Bricks" unique_id=1547156199 instance=ExtResource("2_w1xl6")]
+position = Vector2(208, 64)
+
+[node name="Area2D10" parent="Bricks" unique_id=469949857 instance=ExtResource("2_w1xl6")]
+position = Vector2(80, 64)
+
+[node name="Area2D11" parent="Bricks" unique_id=229146517 instance=ExtResource("2_w1xl6")]
+position = Vector2(0, 128)
+
+[node name="Area2D12" parent="Bricks" unique_id=315047535 instance=ExtResource("2_w1xl6")]
+position = Vector2(128, 128)
+
+[node name="Area2D13" parent="Bricks" unique_id=1249617829 instance=ExtResource("2_w1xl6")]
+position = Vector2(256, 128)
+
+[node name="Area2D14" parent="Bricks" unique_id=1099653494 instance=ExtResource("2_w1xl6")]
+position = Vector2(384, 128)
+
+[node name="Area2D15" parent="Bricks" unique_id=1371500617 instance=ExtResource("2_w1xl6")]
+position = Vector2(512, 128)
+
+[node name="Area2D16" parent="Bricks" unique_id=1011169876 instance=ExtResource("2_w1xl6")]
+position = Vector2(592, 192)
+
+[node name="Area2D17" parent="Bricks" unique_id=1761214192 instance=ExtResource("2_w1xl6")]
+position = Vector2(464, 192)
+
+[node name="Area2D18" parent="Bricks" unique_id=149501902 instance=ExtResource("2_w1xl6")]
+position = Vector2(336, 192)
+
+[node name="Area2D19" parent="Bricks" unique_id=981841817 instance=ExtResource("2_w1xl6")]
+position = Vector2(208, 192)
+
+[node name="Area2D20" parent="Bricks" unique_id=327632399 instance=ExtResource("2_w1xl6")]
+position = Vector2(80, 192)
+
+[node name="Area2D21" parent="Bricks" unique_id=953487006 instance=ExtResource("2_w1xl6")]
+position = Vector2(0, 256)
+
+[node name="Area2D22" parent="Bricks" unique_id=785125627 instance=ExtResource("2_w1xl6")]
+position = Vector2(128, 256)
+
+[node name="Area2D23" parent="Bricks" unique_id=1426482356 instance=ExtResource("2_w1xl6")]
+position = Vector2(256, 256)
+
+[node name="Area2D24" parent="Bricks" unique_id=144352952 instance=ExtResource("2_w1xl6")]
+position = Vector2(384, 256)
+
+[node name="Area2D25" parent="Bricks" unique_id=1039476894 instance=ExtResource("2_w1xl6")]
+position = Vector2(512, 256)
+
+[node name="Ball" parent="." unique_id=1795116593 instance=ExtResource("3_abhvm")]
+position = Vector2(336, 736)

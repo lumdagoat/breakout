@@ -21,6 +21,10 @@ window/size/viewport_height=1280
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[global_group]
+
+Bricks="all bricks"
+
 [layer_names]
 
 2d_physics/layer_1="Player"
