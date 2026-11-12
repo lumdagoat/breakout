@@ -1,21 +1,25 @@
-[gd_scene format=3 uid="uid://cnyj7jvq0eroh"]
+[gd_scene format=3 uid="uid://dupqxgyw1hmwi"]
 
 [ext_resource type="Script" uid="uid://v7itpg8pk32u" path="res://brick/brick.gd" id="1_5p85m"]
 [ext_resource type="Texture2D" uid="uid://d4dkrc8n86am5" path="res://icon.svg" id="1_awxk8"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a8vcx"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bm1mf"]
 size = Vector2(128, 64)
 
-[node name="Brick" type="Area2D" unique_id=1196201401]
-collision_layer = 4
-collision_mask = 2
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_beukx"]
+size = Vector2(128, 64)
+
+[node name="brick" type="StaticBody2D" unique_id=568624953]
 script = ExtResource("1_5p85m")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=486157576]
-shape = SubResource("RectangleShape2D_a8vcx")
+[node name="collisionbox" type="CollisionShape2D" parent="." unique_id=517825170]
+shape = SubResource("RectangleShape2D_bm1mf")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=100510694]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=103762400]
 scale = Vector2(1, 0.5)
 texture = ExtResource("1_awxk8")
 
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[node name="detectionbox" type="Area2D" parent="." unique_id=1647433333]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detectionbox" unique_id=1474313472]
+shape = SubResource("RectangleShape2D_beukx")
