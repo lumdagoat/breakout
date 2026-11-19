@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://cf70yte8njvh7"]
+
+[ext_resource type="PackedScene" uid="uid://dupqxgyw1hmwi" path="res://brick/brick.tscn" id="1_27v5c"]
+[ext_resource type="Script" uid="uid://cbchysied4nve" path="res://brick/brick_level_1.gd" id="1_m10hu"]
+
+[node name="BrickLevel1" type="Node2D" unique_id=2057074314]
+script = ExtResource("1_m10hu")
+
+[node name="brick" parent="." unique_id=568624953 instance=ExtResource("1_27v5c")]
+position = Vector2(64, 32)
+script = null
+
+[node name="brick2" parent="." unique_id=1763269147 instance=ExtResource("1_27v5c")]
+position = Vector2(192, 32)
+script = null
+
+[node name="brick3" parent="." unique_id=150013543 instance=ExtResource("1_27v5c")]
+position = Vector2(320, 32)
+script = null
+
+[node name="brick4" parent="." unique_id=98310990 instance=ExtResource("1_27v5c")]
+position = Vector2(448, 32)
+script = null
+
+[node name="brick5" parent="." unique_id=290636858 instance=ExtResource("1_27v5c")]
+position = Vector2(576, 32)
+script = null
+
+[node name="brick6" parent="." unique_id=594444311 instance=ExtResource("1_27v5c")]
+position = Vector2(656, 96)
+script = null
+
+[node name="brick7" parent="." unique_id=384111230 instance=ExtResource("1_27v5c")]
+position = Vector2(528, 96)
+script = null
+
+[node name="brick8" parent="." unique_id=104696870 instance=ExtResource("1_27v5c")]
+position = Vector2(400, 96)
+script = null
+
+[node name="brick9" parent="." unique_id=1913702886 instance=ExtResource("1_27v5c")]
+position = Vector2(272, 96)
+script = null
+
+[node name="brick10" parent="." unique_id=335706604 instance=ExtResource("1_27v5c")]
+position = Vector2(144, 96)
+script = null
+
+[node name="brick11" parent="." unique_id=1195304088 instance=ExtResource("1_27v5c")]
+position = Vector2(64, 160)
+script = null
+
+[node name="brick12" parent="." unique_id=1060039796 instance=ExtResource("1_27v5c")]
+position = Vector2(192, 160)
+script = null
+
+[node name="brick13" parent="." unique_id=282298036 instance=ExtResource("1_27v5c")]
+position = Vector2(320, 160)
+script = null
+
+[node name="brick14" parent="." unique_id=931831479 instance=ExtResource("1_27v5c")]
+position = Vector2(448, 160)
+script = null
+
+[node name="brick15" parent="." unique_id=1647142997 instance=ExtResource("1_27v5c")]
+position = Vector2(576, 160)
+script = null
+
+[node name="brick16" parent="." unique_id=358692203 instance=ExtResource("1_27v5c")]
+position = Vector2(656, 224)
+script = null
+
+[node name="brick17" parent="." unique_id=513801011 instance=ExtResource("1_27v5c")]
+position = Vector2(528, 224)
+script = null
+
+[node name="brick18" parent="." unique_id=1163433426 instance=ExtResource("1_27v5c")]
+position = Vector2(400, 224)
+script = null
+
+[node name="brick19" parent="." unique_id=774977498 instance=ExtResource("1_27v5c")]
+position = Vector2(272, 224)
+script = null
+
+[node name="brick20" parent="." unique_id=1567866347 instance=ExtResource("1_27v5c")]
+position = Vector2(144, 224)
+script = null

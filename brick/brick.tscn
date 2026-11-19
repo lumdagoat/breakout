@@ -6,10 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bm1mf"]
 size = Vector2(128, 64)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_beukx"]
-size = Vector2(128, 64)
-
-[node name="brick" type="StaticBody2D" unique_id=568624953]
+[node name="brick" type="StaticBody2D" unique_id=568624953 groups=["Bricks"]]
 script = ExtResource("1_5p85m")
 
 [node name="collisionbox" type="CollisionShape2D" parent="." unique_id=517825170]
@@ -18,8 +15,3 @@ shape = SubResource("RectangleShape2D_bm1mf")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=103762400]
 scale = Vector2(1, 0.5)
 texture = ExtResource("1_awxk8")
-
-[node name="detectionbox" type="Area2D" parent="." unique_id=1647433333]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="detectionbox" unique_id=1474313472]
-shape = SubResource("RectangleShape2D_beukx")
